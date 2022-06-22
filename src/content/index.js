@@ -1,13 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App';
 
-const containerRoot = document.createElement('rn-container');
-document.body.appendChild(containerRoot);
-const root = ReactDOM.createRoot(containerRoot);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const iziRoot = document.createElement('izi-container');
+document.body.appendChild(iziRoot);
+const root = createRoot(iziRoot);
+root.render(<App />);
