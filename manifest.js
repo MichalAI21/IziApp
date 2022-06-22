@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'React Next Extension',
+  name: 'Izi',
   description: 'A special surprise inside',
   version: '1.0',
   manifest_version: 3,

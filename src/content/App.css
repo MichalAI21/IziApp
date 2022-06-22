@@ -5,34 +5,9 @@
 .css-selector {
   background: linear-gradient(180deg, #cf332e, #f1dd0c, #2bcd27, #2debfa, #3748f8, #f614e9, #f61453);
   background-size: 1400% 1400%;
-
-  -webkit-animation: AnimationName 33s ease infinite;
-  -moz-animation: AnimationName 33s ease infinite;
   animation: AnimationName 33s ease infinite;
 }
 
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 49% 0%;
-  }
-  50% {
-    background-position: 52% 100%;
-  }
-  100% {
-    background-position: 49% 0%;
-  }
-}
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 49% 0%;
-  }
-  50% {
-    background-position: 52% 100%;
-  }
-  100% {
-    background-position: 49% 0%;
-  }
-}
 @keyframes AnimationName {
   0% {
     background-position: 49% 0%;
@@ -89,6 +64,12 @@
   height: 347px;
   border: 4px solid #000000;
   border-radius: 31px;
+  background: linear-gradient(180deg, #cf332e, #f1dd0c, #2bcd27, #2debfa, #3748f8, #f614e9, #f61453);
+  background-size: 1400% 1400%;
+}
+
+.full-mode-animations {
+  animation: slide-top 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards, AnimationName 33s ease infinite;
 }
 
 .slide-top {
@@ -109,4 +90,5 @@
   bottom: 0;
   position: absolute;
   width: 120%;
+  left: 0;
 }
