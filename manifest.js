@@ -27,6 +27,7 @@ module.exports = {
       matches: ['<all_urls>'],
       css: [],
       js: ['bundles/content.js'],
+      exclude_matches: ['https://docs.google.com/*'],
       run_at: 'document_end',
     },
   ],
