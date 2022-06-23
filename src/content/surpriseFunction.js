@@ -1,4 +1,4 @@
-const BLanguage = { a: 'aba', e: 'ebe', i: 'ibi', o: 'obo', u: 'ubu', A: 'Aba' };
+const BLanguage = { a: 'aba', e: 'ebe', i: 'ibi', o: 'obo', u: 'ubu', A: 'Aba', E: 'Ebe', I: 'Iei' };
 const BLanguageTwoVowels = {
   ebeaba: 'eabea',
   oboobo: 'ooboo',
@@ -16,7 +16,7 @@ export function surpriseFunction(textElements) {
   textElements.forEach((element) => {
     if (element.innerText)
       element.innerText = element.innerText
-        .replace(/[aeiouAEIOU]/g, (m) => BLanguage[m])
+        .replace(/[aeiouAEI]/g, (m) => BLanguage[m])
         .replace(regexp, (m) => BLanguageTwoVowels[m]);
   });
 }
