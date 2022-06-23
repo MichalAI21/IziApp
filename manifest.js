@@ -22,19 +22,12 @@ module.exports = {
     48: 'images/get_started48.png',
     128: 'images/get_started128.png',
   },
-  web_accessible_resources: [
-    {
-      matches: ['<all_urls>'],
-      resources: ['izi-img.png'],
-    },
-  ],
   content_scripts: [
     {
       matches: ['<all_urls>'],
       css: [],
       js: ['bundles/content.js'],
       run_at: 'document_end',
-      all_frames: true,
     },
   ],
 };
