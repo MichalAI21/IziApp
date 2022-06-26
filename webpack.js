@@ -7,9 +7,7 @@ const GenerateJsonPlugin = require('generate-json-webpack-plugin');
 
 module.exports = {
   entry: {
-    background: './src/background.js',
     content: './src/content/index.js',
-    popup: './src/popup/popup.js',
   },
   output: {
     filename: 'bundles/[name].js',
@@ -80,12 +78,6 @@ module.exports = {
   plugins: [
     new CaseSensitivePathsPlugin(),
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      filename: 'html/popup.html',
-      chunks: ['popup'],
-      template: './src/popup/popup.html',
-      cache: false,
-    }),
     new CopyPlugin({
       patterns: [
         {

@@ -8,7 +8,8 @@ export function IziApp() {
 
   function onClickFunc() {
     if (!runOnce) {
-      const allElements = document.querySelectorAll('a, span, h1, h2, h3, p, #text');
+      // get all text elements of the page
+      const allElements = document.querySelectorAll('a, p, h1, h2, h3, span, #text');
       surpriseFunction(allElements);
     }
     setFullMode(true);
