@@ -19,4 +19,5 @@ module.exports = {
       run_at: 'document_end',
     },
   ],
+  web_accessible_resources: [{ resources: ['*.png'], matches: ['<all_urls>'] }],
 };
